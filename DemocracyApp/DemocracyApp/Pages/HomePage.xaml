@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemocracyApp.Pages.HomePage"
+             Title="Home Page">
+  <ScrollView>
+    <StackLayout Spacing="10">
+      <Image x:Name="photoImage"
+             HorizontalOptions="Center"
+             VerticalOptions="Center" />
+      <Label Text="Welcome"
+             FontSize="20"
+             FontAttributes="Bold"
+             HorizontalOptions="Center"
+             VerticalOptions="Center" />
+      <Label x:Name="userNameLabel"
+             FontSize="30"
+             FontAttributes="Bold"
+             HorizontalOptions="Center"
+             VerticalOptions="Center" />
+      <StackLayout Orientation="Horizontal">
+        <Button x:Name="mySettingsButton"
+                Text="My Settings"
+                BackgroundColor="Purple"
+                TextColor="White"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"/>
+        <Button x:Name="myVotingsButton"
+                Text="My Votings"
+                BackgroundColor="Lime"
+                TextColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Button x:Name="resultsButton"
+                Text="Results"
+                BackgroundColor="Yellow"
+                TextColor="Blue"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"/>
+        <Button x:Name="logOutButton"
+                Text="Log Out"
+                BackgroundColor="Red"
+                TextColor="White"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center"/>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
